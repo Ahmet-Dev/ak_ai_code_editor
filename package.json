@@ -1,0 +1,56 @@
+{
+  "name": "create-ai-code-editor",
+  "version": "1.0.0",
+  "description": "Create a new AI-powered code editor project with a single command",
+  "type": "module",
+  "bin": {
+    "create-ai-code-editor": "./cli.js"
+  },
+  "files": [
+    "cli.js",
+    "template/**/*"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "ai",
+    "code-editor",
+    "react",
+    "typescript",
+    "vite",
+    "tailwindcss"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.344.0",
+    "file-saver": "^2.0.5",
+    "@supabase/supabase-js": "^2.39.7",
+    "@xenova/transformers": "^2.15.1",
+    "onnxruntime-web": "^1.17.0",
+    "localforage": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@types/file-saver": "^2.0.7",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^9.9.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
